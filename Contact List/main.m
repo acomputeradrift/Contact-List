@@ -22,7 +22,9 @@ int main(int argc, const char * argv[]) {
         while (gameOn == YES){
             
             InputCollector *inputHandler = [[InputCollector alloc] init];
-            NSString *collected = [inputHandler inputForPrompt:@"What would you like do next?\nnew - Create a new contact \nlist - List all contacts \nquit - Exit Application\nEnter:"];
+            NSString *rawInput = [inputHandler inputForPrompt:@"What would you like do next?\nnew - Create a new contact \nlist - List all contacts \nshow - will show contact a index number \nquit - Exit Application\nEnter:"];
+            NSArray *splitInput = [rawInput componentsSeparatedByString:@" "];
+            NSString * collected = [splitInput firstObject];
             
             if ([collected isEqualToString:@"new"])
             {
@@ -42,6 +44,13 @@ int main(int argc, const char * argv[]) {
                 [contactListHandler printAllContacts];
             }
             
+            if ([collected isEqualToString:@"show"]) {
+                NSString *choiceIndex = splitInput[1];
+                
+                NSInteger choiceNumber = [choiceIndex integerValue];
+                // NO ERROR CHECKING
+                [contactListHandler listContact:(int)choiceNumber];
+            }
             
             if ([collected isEqualToString:@"quit"])
             {

@@ -39,6 +39,14 @@
 //        NSLog (@"Index: %@\nName:%@\nEmail:%@", contact.name, contact.email);
 //    }
 }
+
+- (void)listContact: (int) selectContact {
+    Contact *contact = self.contactListArray[selectContact];
+    NSLog (@"Index: %i Name: %@ Email: %@", selectContact, contact.name, contact.email);
+
+}
+
+
 @end
 
 

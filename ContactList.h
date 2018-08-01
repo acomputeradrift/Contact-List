@@ -15,8 +15,11 @@
 
 - (instancetype)init;
 
--(void)addContact:(Contact *)newContact;
+- (void)addContact:(Contact *)newContact;
 
 - (void)printAllContacts;
+
+- (void)listContact: (int) selectContact;
+
 
 @end
