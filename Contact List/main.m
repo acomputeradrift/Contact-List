@@ -29,8 +29,7 @@ int main(int argc, const char * argv[]) {
                 Contact *newContact = [[Contact alloc] init];
                 newContact.name = [newContactHandler inputForPrompt:@"Please enter the new contact name:"];
                 newContact.email = [newContactHandler inputForPrompt:@"Please enter the new contact email:"];
-//                NSString *newContact = [newContactHandler inputForPrompt:@"Please enter the new contact name:"];
-//                 NSLog (@"You have created a new contact called %@", newContact);
+                NSLog (@"You have created a new contact called %@ with the email address %@", newContact.name, newContact.email);
             }
             if ([collected isEqualToString:@"list"])
             {
