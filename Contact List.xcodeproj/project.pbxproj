@@ -10,6 +10,7 @@
 		7D6C7F6F21113CCD00B46782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C7F6E21113CCD00B46782 /* main.m */; };
 		7D6C7F7721113E3100B46782 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C7F7621113E3000B46782 /* InputCollector.m */; };
 		7D6C7F7A211149F700B46782 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C7F79211149F700B46782 /* Contact.m */; };
+		7D6C7F7D21114E0200B46782 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C7F7C21114E0200B46782 /* ContactList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		7D6C7F7621113E3000B46782 /* InputCollector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
 		7D6C7F78211149F700B46782 /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		7D6C7F79211149F700B46782 /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		7D6C7F7B21114E0200B46782 /* ContactList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
+		7D6C7F7C21114E0200B46782 /* ContactList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,8 @@
 		7D6C7F6221113CCD00B46782 = {
 			isa = PBXGroup;
 			children = (
+				7D6C7F7B21114E0200B46782 /* ContactList.h */,
+				7D6C7F7C21114E0200B46782 /* ContactList.m */,
 				7D6C7F6D21113CCD00B46782 /* Contact List */,
 				7D6C7F6C21113CCD00B46782 /* Products */,
 			);
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6C7F7D21114E0200B46782 /* ContactList.m in Sources */,
 				7D6C7F7721113E3100B46782 /* InputCollector.m in Sources */,
 				7D6C7F7A211149F700B46782 /* Contact.m in Sources */,
 				7D6C7F6F21113CCD00B46782 /* main.m in Sources */,
