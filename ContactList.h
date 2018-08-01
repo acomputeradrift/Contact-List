@@ -17,4 +17,6 @@
 
 -(void)addContact:(Contact *)newContact;
 
+- (void)printAllContacts;
+
 @end

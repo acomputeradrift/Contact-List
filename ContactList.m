@@ -23,4 +23,14 @@
 {
     [self.contactListArray addObject:newContact];
 }
+
+- (void)printAllContacts
+{
+    for (Contact *contact in self.contactListArray)
+    {
+        NSLog (@"Name:%@\nEmail:%@", contact.name, contact.email);
+    }
+}
 @end
+
+

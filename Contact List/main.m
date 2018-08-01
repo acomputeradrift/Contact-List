@@ -15,16 +15,14 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        ContactList *contactListHandler = [[ContactList alloc] init];
+        
+        
         BOOL gameOn = YES;
         while (gameOn == YES){
             
             InputCollector *inputHandler = [[InputCollector alloc] init];
             NSString *collected = [inputHandler inputForPrompt:@"What would you like do next?\nnew - Create a new contact \nlist - List all contacts \nquit - Exit Application\nEnter:"];
-           
-            ContactList *contactListHandler = [[ContactList alloc] init];
-            
-            
-            
             
             if ([collected isEqualToString:@"new"])
             {
@@ -35,13 +33,13 @@ int main(int argc, const char * argv[]) {
                 newContact.name = [newContactHandler inputForPrompt:@"Please enter the new contact name:"];
                 newContact.email = [newContactHandler inputForPrompt:@"Please enter the new contact email:"];
                 [contactListHandler addContact:newContact];
-                NSLog (@"You have added a new contact called %@ with the email address %@", newContact.name, newContact.email);
+               // NSLog (@"You have added a new contact called %@ with the email address %@", newContact.name, newContact.email);
             }
             
             
             if ([collected isEqualToString:@"list"])
             {
-                NSLog (@"List all contacts");
+                [contactListHandler printAllContacts];
             }
             
             
